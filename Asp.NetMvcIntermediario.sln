@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Asp.NetMvcIntermediario", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArtigoCodeFirstMvc5", "ArtigoCodeFirstMvc5\ArtigoCodeFirstMvc5.csproj", "{E4361CAF-32A2-456E-819D-F6ED668BCC33}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContosoUniversity", "ContosoUniversity\ContosoUniversity.csproj", "{80C9EFED-647A-46E7-991E-2CA9325F3158}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{E4361CAF-32A2-456E-819D-F6ED668BCC33}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E4361CAF-32A2-456E-819D-F6ED668BCC33}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E4361CAF-32A2-456E-819D-F6ED668BCC33}.Release|Any CPU.Build.0 = Release|Any CPU
+		{80C9EFED-647A-46E7-991E-2CA9325F3158}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80C9EFED-647A-46E7-991E-2CA9325F3158}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{80C9EFED-647A-46E7-991E-2CA9325F3158}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{80C9EFED-647A-46E7-991E-2CA9325F3158}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
