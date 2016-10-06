@@ -5,6 +5,8 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Asp.NetMvcIntermediario", "Asp.NetMvcIntermediario\Asp.NetMvcIntermediario.csproj", "{EAF83438-7699-43AB-9B04-E2B87236C8EF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArtigoCodeFirstMvc5", "ArtigoCodeFirstMvc5\ArtigoCodeFirstMvc5.csproj", "{E4361CAF-32A2-456E-819D-F6ED668BCC33}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{EAF83438-7699-43AB-9B04-E2B87236C8EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EAF83438-7699-43AB-9B04-E2B87236C8EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EAF83438-7699-43AB-9B04-E2B87236C8EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E4361CAF-32A2-456E-819D-F6ED668BCC33}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E4361CAF-32A2-456E-819D-F6ED668BCC33}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E4361CAF-32A2-456E-819D-F6ED668BCC33}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E4361CAF-32A2-456E-819D-F6ED668BCC33}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
