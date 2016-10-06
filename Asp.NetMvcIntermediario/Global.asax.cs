@@ -19,7 +19,9 @@ namespace Asp.NetMvcIntermediario
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
 
-            Database.SetInitializer(new DropCreateDatabaseIfModelChanges<DBContext>());
+            //Database.SetInitializer(new DropCreateDatabaseIfModelChanges<DBContext>());
+            // Criar o DB
+            Database.SetInitializer<BancoContexto>(new InicializarBanco());
         }
     }
 }

@@ -196,9 +196,12 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\AlunoController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\ProdutoController.cs" />
+    <Compile Include="Controllers\ProfessorController.cs" />
+    <Compile Include="Controllers\TopicoController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -281,6 +284,21 @@
     <Content Include="Views\Produto\Details.cshtml" />
     <Content Include="Views\Produto\Edit.cshtml" />
     <Content Include="Views\Produto\Index.cshtml" />
+    <Content Include="Views\Professor\Create.cshtml" />
+    <Content Include="Views\Professor\Delete.cshtml" />
+    <Content Include="Views\Professor\Details.cshtml" />
+    <Content Include="Views\Professor\Edit.cshtml" />
+    <Content Include="Views\Professor\Index.cshtml" />
+    <Content Include="Views\Aluno\Create.cshtml" />
+    <Content Include="Views\Aluno\Delete.cshtml" />
+    <Content Include="Views\Aluno\Details.cshtml" />
+    <Content Include="Views\Aluno\Edit.cshtml" />
+    <Content Include="Views\Aluno\Index.cshtml" />
+    <Content Include="Views\Topico\Create.cshtml" />
+    <Content Include="Views\Topico\Delete.cshtml" />
+    <Content Include="Views\Topico\Details.cshtml" />
+    <Content Include="Views\Topico\Edit.cshtml" />
+    <Content Include="Views\Topico\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

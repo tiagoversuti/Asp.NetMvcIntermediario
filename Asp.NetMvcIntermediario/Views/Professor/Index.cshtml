@@ -1,0 +1,69 @@
+﻿@model IEnumerable<Asp.NetMvcIntermediario.Models.Professor>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Nome)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Telefone)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Salario)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TwitterBlog)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Materia)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Disponivel)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Admissao)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Nome)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Telefone)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Salario)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TwitterBlog)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Materia)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Disponivel)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Admissao)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.IDProfessor }) |
+            @Html.ActionLink("Details", "Details", new { id=item.IDProfessor }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.IDProfessor })
+        </td>
+    </tr>
+}
+
+</table>
