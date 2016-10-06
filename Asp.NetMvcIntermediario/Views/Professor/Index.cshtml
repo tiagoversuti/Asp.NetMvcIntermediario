@@ -4,10 +4,10 @@
     ViewBag.Title = "Index";
 }
 
-<h2>Index</h2>
+<h2>Professores</h2>
 
 <p>
-    @Html.ActionLink("Create New", "Create")
+    @Html.ActionLink("Novo professor", "Create")
 </p>
 <table class="table">
     <tr>
@@ -59,11 +59,18 @@
             @Html.DisplayFor(modelItem => item.Admissao)
         </td>
         <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.IDProfessor }) |
-            @Html.ActionLink("Details", "Details", new { id=item.IDProfessor }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.IDProfessor })
+            @Html.ActionLink("Editar", "Edit", new { id=item.IDProfessor }) |
+            @Html.ActionLink("Detalhes", "Details", new { id=item.IDProfessor }) |
+            @Html.ActionLink("Excluir", "Delete", new { id=item.IDProfessor })
         </td>
     </tr>
 }
 
 </table>
+
+<ul>
+    @foreach (var item in Model)
+    {
+        <li>@Html.ActionLink(item.Nome, "Details", new { id = item.IDProfessor })</li>
+    }
+</ul>

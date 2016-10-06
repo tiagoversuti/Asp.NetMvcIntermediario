@@ -4,7 +4,7 @@
     ViewBag.Title = "Details";
 }
 
-<h2>Details</h2>
+<h2>Detalhes do Professor</h2>
 
 <div>
     <h4>Professor</h4>
@@ -69,6 +69,26 @@
     </dl>
 </div>
 <p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.IDProfessor }) |
-    @Html.ActionLink("Back to List", "Index")
+    @Html.ActionLink("Editar", "Edit", new { id = Model.IDProfessor }) |
+    @Html.ActionLink("Retarnar à lista", "Index")
 </p>
+
+<fieldset>
+    <legend>Alunos</legend>
+    <ul>
+        @foreach (var aluno in Model.Alunos)
+        {
+            <li>@aluno.NomeAluno</li>
+        }
+    </ul>
+</fieldset>
+
+<fieldset>
+    <legend>Tópicos</legend>
+    <ul>
+        @foreach (var topico in Model.Topicos)
+        {
+            <li>@topico.Descricao</li>
+        }
+    </ul>
+</fieldset>

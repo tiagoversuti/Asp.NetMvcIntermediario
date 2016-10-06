@@ -1,0 +1,16 @@
+﻿@model IEnumerable<Asp.NetMvcIntermediario.Models.Aluno>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Alunos</h2>
+<br/>
+<p>Total de alunos: @Model.Count()</p>
+<ul>
+    @foreach (var item in Model)
+    {
+        @*<li>@item.NomeAluno</li>*@
+        <li>@Html.ActionLink(item.NomeAluno, "Details", new { id = item.IDAluno })</li>
+    }
+</ul>
