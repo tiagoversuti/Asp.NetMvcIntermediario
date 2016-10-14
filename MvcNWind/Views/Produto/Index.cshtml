@@ -9,7 +9,35 @@
 <p>
     @Html.ActionLink("Novo produto", "Create")
 </p>
-<table class="table">
+
+@{ 
+    var grid = new WebGrid(source: Model,
+                           rowsPerPage: 10,
+                           canPage:true,
+                           canSort:true,
+                           defaultSort:"ProductName"
+        );
+}
+
+<div id="grid">
+    @grid.GetHtml(
+        tableStyle:"grid",
+        headerStyle:"head",
+        columns: grid.Columns(
+            grid.Column("ProductName", header: "Produto", format: @<text>
+    @Html.ActionLink((string)item.ProductName, "Details", "Produto", new { id = item.ProductID }, null)
+    </text>),
+            grid.Column("Categories.CategoryName", header:"Categoria"),
+            grid.Column("UnitPrice", header:"Preço", format:(item) => string.Format("{0:C2}", item.UnitPrice)),
+            grid.Column("UnitsInStock", header: "Estoque", canSort:false),
+            grid.Column(format: (item) => Html.ActionLink("Editar", "Edit", new { id = item.ProductID })),
+            grid.Column(format: (item) => Html.ActionLink("Detalhes", "Details", new { id = item.ProductID })),
+            grid.Column(format: (item) => Html.ActionLink("Excluir", "Delete", new { id = item.ProductID }))
+            )
+        )
+</div>
+
+@*<table class="table">
     <tr>
         <th>
             @Html.DisplayNameFor(model => model.ProductName)
@@ -54,4 +82,4 @@
     </tr>
 }
 
-</table>
+</table>*@
