@@ -1,0 +1,15 @@
+﻿@model IEnumerable<MvcNWind.Models.Products>
+@using MvcNWind.ViewModels
+
+<table>
+    <tr>
+        <th>TOP 5</th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.ProductName</td>
+        </tr>
+    }
+</table>

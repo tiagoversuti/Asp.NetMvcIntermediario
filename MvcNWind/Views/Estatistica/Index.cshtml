@@ -1,0 +1,4 @@
+﻿@model MvcNWind.ViewModels.EstatisticaViewModel
+
+<h3>Destaque: @Model.PromoProduto.ProductName - R$ @string.Format("{0:n2}", @Model.PromoProduto.UnitPrice)</h3>
+<p>Existem @Model.QtdeProdutos produto(s) à sua disposição! - Preço médio R$ @string.Format("{0:n2}", @Model.PrecoMedio)</p>
